@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
+use App\Http\Controllers\Controller;
 use App\Models\Project;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -22,7 +23,8 @@ class ProjectController extends Controller
         return response()->json($query->get(), 200);
     }
 
-    public function store(Request $request) {
+    public function store(Request $request)
+    {
         $project = Project::create([
             'name' => $request->name,
             'description' => $request->description,

@@ -1,9 +1,8 @@
 <?php
 
-use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\ProjectController;
-use App\Http\Controllers\TaskController;
-use Illuminate\Http\Request;
+use App\Http\Controllers\Api\CategoryController;
+use App\Http\Controllers\Api\ProjectController;
+use App\Http\Controllers\Api\TaskController;
 use Illuminate\Support\Facades\Route;
 
 // Project
